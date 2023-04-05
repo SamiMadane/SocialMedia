@@ -163,9 +163,13 @@ class SettingsScreen extends StatelessWidget {
               ),
               SizedBox(height: 20,),
               Spacer(),
-              defaultButton(function: (){
-                singOut(context);
-              }, text: 'LogOut'),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 15),
+                child: defaultButton(function: (){
+                  singOut(context);
+                }, text: 'LogOut',
+                height: 40,),
+              ),
             ],
           ),
         );
